@@ -18,5 +18,5 @@ if __name__ == "__main__":
     start_http_server(5001)
     #server = http.server.HTTPServer(('46.101.171.233', 5000), HandleRequests)
     #server = http.server.HTTPServer(('localhost', 5000), HandleRequests)
-    server = http.server.HTTPServer(('18.170.46.110', 5000), HandleRequests)
+    server = http.server.HTTPServer(('0.0.0.0', 5000), HandleRequests)
     server.serve_forever()
