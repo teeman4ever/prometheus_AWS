@@ -3,7 +3,7 @@ import time
 from prometheus_client import start_http_server, Gauge
 
 REQUEST_IN_PROGRESS = Gauge('requests_inprogress', "Number of Live Request on Application")
-REQUEST_LAST_EXECUTED = Gauge("request_last_served", "Time the application was last servered")
+REQUEST_LAST_EXECUTED = Gauge("request_last_served", "Time the application was last served")
 
 class HandleRequests(http.server.BaseHTTPRequestHandler):
 
